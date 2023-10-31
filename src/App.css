@@ -1,1 +1,5 @@
-/*# sourceMappingURL=App.css.map */
+[class*=col] {
+  background-color: rgba(113, 44, 249, 0.15);
+  border: 1px solid rgba(113, 44, 249, 0.3);
+  color: #000;
+}/*# sourceMappingURL=App.css.map */
