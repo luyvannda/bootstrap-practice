@@ -2,25 +2,18 @@ export default function Bootstrap() {
   return (
     <>
       <div className="container-md">
-        <h2>Example of Alert</h2>
-        <p>Alerts are created with the .alert class, followed by a contextual color classes:</p>
-
-        <div className="alert alert-primary">
-          <strong>hello</strong> is better than goodbye.
+        <div className="alert alert-success alert-dismissible fade show">
+          <button type="button" className="btn-close" data-bs-dismiss="alert"></button>
+          <strong>Success!</strong> This alert box could indicate a successful or positive action.
+        </div>
+        <div className="alert alert-info alert-dismissible fade show">
+          <button type="button" className="btn-close" data-bs-dismiss="alert"></button>
+          <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
         </div>
 
-        <div className="alert alert-secondary">
-          <strong>the second wheel</strong> is the weakest.
-        </div>
 
-        <div className="alert alert-info"><strong>info</strong> is used for the wise</div>
-        <div className="alert alert-success"><strong>success</strong> is within our reach</div>
-        <div className="alert alert-warning"><strong>I warn</strong> you to give up</div>
-        <div className="alert alert-danger">This is a <strong>dangerous</strong> world</div>
-        <div className="alert alert-dark"><strong>The dark</strong>side always win first</div>
-        <div className="alert alert-light">But <strong>The light</strong>side will take the final victory</div>
 
-      </div>
+      </div >
     </>
   )
 }
