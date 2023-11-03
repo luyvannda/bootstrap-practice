@@ -23,21 +23,33 @@ export default function Bootstrap() {
         <button className="btn btn-info" type="button">
           <span className="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span> Loading...
         </button>
+      </div >
 
-        <div className="btn-group">
+      <div className="container pt-3">
+        <div className="btn-group me-2">
           <button type="button" className="btn btn-primary">Sony</button>
           <button type="button" className="btn btn-primary">Samsung</button>
-          <button type="button" className="btn btn-warning">Apple</button>
-          <button type="button" className="btn btn-warning">Oppo</button>
+          <div className="btn-group">
+            <button type="button" className="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">Apple</button>
+            <ul className="dropdown-menu">
+              <li><a href="#" className="dropdown-item">iPhone</a></li>
+              <li><a href="#" className="dropdown-item">iPad</a></li>
+            </ul>
+          </div>
         </div>
 
-        <div className="btn-group-vertical">
+        <div className="btn-group me-2">
+          <button type="button" className="btn btn-primary">BMW</button>
+          <button type="button" className="btn btn-primary">Mercedes</button>
+          <button type="button" className="btn btn-warning">Volvo</button>
+        </div>
+
+        <div className="btn-group-vertical ">
           <button type="button" className="btn btn-primary">Apple</button>
           <button type="button" className="btn btn-primary">Samsung</button>
           <button type="button" className="btn btn-primary">Sony</button>
         </div>
-
-      </div >
+      </div>
     </>
   )
 }
