@@ -3,68 +3,57 @@ export default function Bootstrap() {
   return (
     <>
       <div className="container pt-3">
-        <h2>Pagination</h2>
-        <p>To create a basic pagination, add the .pagination class to an ul element. Then add the .page-item to each li element and a .page-link class to each link inside li:</p>
-        <nav aria-label="Page navigation">
-          <ul className="pagination">
-            <li className="page-item disabled"><a className="page-link" href="#"> Previous</a>
-            </li>
-            <li className="page-item"><a className="page-link" href="#">1</a>
-            </li>
-            <li className="page-item active"><a className="page-link" href="#">2</a>
-            </li>
-            <li className="page-item"><a href="#" className="page-link">3</a></li>
-            <li className="page-item"><a href="#" className="page-link">Next</a></li>
+
+        <ol className="list-group list-group-numbered">
+          <li className="list-group-item active">First item</li>
+          <li className="list-group-item">Second item</li>
+          <li className="list-group-item">Third item</li>
+        </ol>
+
+        <div className="container-md pt-3">
+          <h2 className="pt-4">List group with linked</h2>
+          <div className="list-group list">
+            <a href="#" className="list-group-item list-group-item-action">First item</a>
+            <a href="#" className="list-group-item list-group-item-action disabled" >Second item</a>
+            <a href="#" className="list-group-item list-group-item-action">Third item</a>
+          </div>
+        </div>
+
+
+        <div className="container-md pt-3">
+          <h2>Flush / Remove Borders</h2>
+          <p>Use the .list-group-flush class to remove some borders and rounded corners:</p>
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item">First item</li>
+            <li className="list-group-item">Second item</li>
+            <li className="list-group-item">Third item</li>
+            <li className="list-group-item">Fourth item</li>
           </ul>
-        </nav>
+        </div>
 
-        <nav aria-label="Page navigation">
-          <ul className="pagination pagination-lg justify-content-center">
-            <li className="page-item disabled">
-              <a className="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-              </a>
-            </li>
-            <li className="page-item active" aria-current="page"><a className="page-link" href="#">1</a></li>
-            <li className="page-item"><a className="page-link" href="#">2</a></li>
-            <li className="page-item"><a className="page-link" href="#">3</a></li>
-            <li className="page-item">
-              <a className="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-              </a>
-            </li>
+        <div className="container-md pt-3">
+          <p>Horizontal list group</p>
+          <ul className="list-group list-group-horizontal">
+            <li className="list-group-item">First item</li>
+            <li className="list-group-item">Second item</li>
+            <li className="list-group-item">Third item</li>
+            <li className="list-group-item">Fourth item</li>
           </ul>
-        </nav>
+        </div>
 
+        <div className="container-md pt-3">
 
-        <nav aria-label="Page navigation">
-          <ul className="pagination pagination-sm justify-content-end">
-            <li className="page-item disabled">
-              <a className="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-              </a>
-            </li>
-            <li className="page-item" aria-current="page"><a className="page-link" href="#">1</a></li>
-            <li className="page-item"><a className="page-link" href="#">2</a></li>
-            <li className="page-item active"><a className="page-link" href="#">3</a></li>
-            <li className="page-item">
-              <a className="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-        <h2>Breadcrumbs</h2>
-        <p>The .breadcrumb class indicates the current page&apos;s location within a navigational hierarchy:</p>
-        <nav aria-label="breadcrumb">
-          <ol className="breadcrumb">
-            <li className="breadcrumb-item"><a href="#">Photos</a></li>
-            <li className="breadcrumb-item"><a href="#">Summer 2017</a></li>
-            <li className="breadcrumb-item active" aria-current="page">Italy</li>
-            <li className="breadcrumb-item"><a href="#">Rome</a></li>
-          </ol>
-        </nav>
+          <div className="list-group">
+            <a href="#" className="list-group-item list-group-item-action ">Action item</a>
+            <a href="#" className="list-group-item list-group-item-action list-group-item-primary">Primary item</a>
+            <a href="#" className="list-group-item list-group-item-action list-group-item-info">Info item</a>
+            <a href="#" className="list-group-item list-group-item-action list-group-item-warning">Warning item</a>
+            <a href="#" className="list-group-item list-group-item-action list-group-item-danger">Danger item</a>
+            <a href="#" className="list-group-item list-group-item-action list-group-item-secondary">Secondary item</a>
+            <a href="#" className="list-group-item list-group-item-action list-group-item-dark">Dark item</a>
+            <a href="#" className="list-group-item list-group-item-action list-group-item-light">Light item</a>
+          </div>
+        </div>
 
       </div>
     </>
