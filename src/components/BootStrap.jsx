@@ -42,7 +42,7 @@ export default function Bootstrap() {
         </div>
 
         <div className="container-md pt-3">
-
+          <h2>List Group with color</h2>
           <div className="list-group">
             <a href="#" className="list-group-item list-group-item-action ">Action item</a>
             <a href="#" className="list-group-item list-group-item-action list-group-item-primary">Primary item</a>
@@ -54,6 +54,21 @@ export default function Bootstrap() {
             <a href="#" className="list-group-item list-group-item-action list-group-item-light">Light item</a>
           </div>
         </div>
+
+        <ul className="list-group">
+          <li className="list-group-item d-flex justify-content-between align-items-center ">
+            Inbox
+            <span className="badge bg-primary rounded-pill">15</span>
+          </li>
+          <li className="list-group-item d-flex justify-content-between align-items-center">
+            Ads
+            <span className="badge bg-warning rounded-pill">90</span>
+          </li>
+          <li className="list-group-item d-flex justify-content-between align-items-center disabled">
+            Virus
+            <span className="badge bg-danger badge-pill">20</span>
+          </li>
+        </ul>
 
       </div>
     </>
