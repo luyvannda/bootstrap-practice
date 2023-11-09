@@ -111,6 +111,20 @@ export default function Bootstrap() {
           </div>
         </div>
       </div>
+
+      <div className="container-md pt-3">
+        <div className="btn-group-vertical">
+          <button className="btn btn-primary">Apple</button>
+          <button className="btn btn-primary">Samsung</button>
+          <div className="btn-group">
+            <button className="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">Sony</button>
+            <ul className="dropdown-menu">
+              <li><a href="#" className="dropdown-item">PS5</a></li>
+              <li><a href="#" className="dropdown-item">Bravia TV</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </>
   )
 }
