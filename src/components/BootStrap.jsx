@@ -3,58 +3,98 @@
 export default function Bootstrap() {
   return (
     <>
+      <div className="container pt-3  d-flex justify-content-center">
+        <div className="dropdown">
+          <button className="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Dropdown Button
+          </button>
+          <ul className="dropdown-menu" >
+            <li><h5 className="dropdown-header">Header 1</h5></li>
+            <li> <a className="dropdown-item" href="#">Link 1</a></li>
+            <li> <a className="dropdown-item" href="#">Link 2</a></li>
+            <li> <a className="dropdown-item" href="#">Link 3</a></li>
+            <li>
+              <hr className="dropdown-divider" />
+            </li>
+            <li>
+              <h5 className="dropdown-header">Header 2</h5>
+            </li>
+            <li><a href="#" className="dropdown-item">Another Link</a></li>
+          </ul>
+        </div>
+      </div>
       <div className="container pt-3">
-        <h2>Basic Card</h2>
-        <div className="card">
-          <div className="card-header text-bg-primary ">header</div>
-          <div className="card-body text-bg-info">
-            body
-          </div>
-          <div className="card-footer text-bg-success">footer</div>
+        <div className="dropdown dropend">
+          <button className="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Dropdown Button
+          </button>
+          <ul className="dropdown-menu" >
+            <li><h5 className="dropdown-header">Header 1</h5></li>
+            <li> <a className="dropdown-item" href="#">Link 1</a></li>
+            <li> <a className="dropdown-item" href="#">Link 2</a></li>
+            <li> <a className="dropdown-item" href="#">Link 3</a></li>
+            <li>
+              <hr className="dropdown-divider" />
+            </li>
+            <li>
+              <h5 className="dropdown-header">Header 2</h5>
+            </li>
+            <li><a href="#" className="dropdown-item">Another Link</a></li>
+          </ul>
         </div>
+      </div>
 
-
-        <div className="card">
-          <div className="card-body">
-            <h4 className="card-title">Title</h4>
-            <p className="card-text">Text</p>
-            <a href="#" className="card-link">Card link</a>
-            <a href="#" className="card-link">Another link</a>
-          </div>
+      <div className="container-md pt-3 d-flex justify-content-end">
+        <div className="dropdown dropstart">
+          <button className="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            2nd Dropdown Menu
+          </button>
+          <ul className="dropdown-menu">
+            <li><a href="#" className="dropdown-item">Default Link</a></li>
+            <li><a href="#" className="dropdown-item active">Active Link</a></li>
+            <li><a href="#" className="dropdown-item disabled">Disabled Link</a></li>
+          </ul>
         </div>
+      </div>
 
-        <div className="container d-flex flex-column justify-content-center align-items-center pt-3">
+      <div className="container-md pt-3">
+        <div className="dropdown dropdown-menu-end">
+          <button className="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            This wide drop down menu is an example.
+          </button>
+          <ul className="dropdown-menu">
+            <li><a href="#" className="dropdown-item">Default Link</a></li>
+            <li><a href="#" className="dropdown-item active">Active Link</a></li>
+            <li><a href="#" className="dropdown-item disabled">Disabled Link</a></li>
+          </ul>
+        </div>
+      </div>
 
-          <div className="row p-3">
+      <div className="container-md pt-3 ">
+        <div className="dropdown ">
+          <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Drop down with text
+          </button>
+          <ul className="dropdown-menu">
+            <li><a href="#" className="dropdown-item">Link 1</a></li>
+            <li><a href="#" className="dropdown-item">Link 2</a></li>
+            <li><a href="#" className="dropdown-item">Link 3</a></li>
+            <li><a href="#" className="dropdown-item-text">Text link</a></li>
+            <li><span className="dropdown-item-text">Just text</span></li>
+          </ul>
+        </div>
+      </div>
 
-            <div className="card col-md-6" >
-              <img className="card-img-top" src="./avatar1.png" alt="an avatar image" />
-              <div className="card-body">
-                <h4 className="card-title">John Doe</h4>
-                <p className="card-text">John Doe is a web developer</p>
-                <a href="#" className="btn btn-primary card-link">See profile</a>
-              </div>
-            </div>
-
-            <div className="card col-md-6" >
-              <div className="card-body">
-                <h4 className="card-title">Mary Jane</h4>
-                <p className="card-text">Mary Jane is a web developer</p>
-                <a href="#" className="btn btn-primary card-link">See profile</a>
-              </div>
-              <img className="card-img-bottom" src="./newyork.jpg" alt="an avatar image" />
-            </div>
-          </div>
-
-          <div className="card" style={{ width: "320px" }}>
-            <img className="card-img-top" src="./avatar1.png" alt="an avatar image" />
-            <div className="card-img-overlay">
-              <h4 className="card-title">John Doe</h4>
-              <p className="card-text">John Doe is a web developer</p>
-              <a href="#" className="btn btn-primary card-link">See profile</a>
-            </div>
-          </div>
-
+      <div className="container-md pt-3 fixed-bottom">
+        <div className="dropup dropdown-menu-end">
+          <button className="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            The drop-up button.
+          </button>
+          <ul className="dropdown-menu">
+            <li><a href="#" className="dropdown-item">Default Link</a></li>
+            <li><a href="#" className="dropdown-item active">Active Link</a></li>
+            <li><a href="#" className="dropdown-item disabled">Disabled Link</a></li>
+          </ul>
         </div>
       </div>
     </>
