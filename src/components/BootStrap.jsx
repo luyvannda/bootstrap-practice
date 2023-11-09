@@ -5,67 +5,54 @@ export default function Bootstrap() {
     <>
       <div className="container pt-3">
 
-        <button className="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#show1">
-          Show
-        </button>
-        <div className="collapse" id="show1">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa ea officia omnis voluptate deleniti ipsa facere in facilis ad esse atque eos eaque, eum vero ipsum? Maxime alias iure labore?
-        </div>
+        <ul className="nav">
+          <li className="nav-item"><a href="#" className="nav-link">link</a></li>
+          <li className="nav-item"><a href="#" className="nav-link">link</a></li>
+          <li className="nav-item"><a href="#" className="nav-link">link</a></li>
+          <li className="nav-item"><a href="#" className="nav-link disabled">disabled</a></li>
+        </ul>
+
+        <ul className="nav justify-content-center">
+          <li className="nav-item"><a href="#" className="nav-link">link</a></li>
+          <li className="nav-item"><a href="#" className="nav-link">link</a></li>
+          <li className="nav-item"><a href="#" className="nav-link">link</a></li>
+          <li className="nav-item"><a href="#" className="nav-link disabled">disabled</a></li>
+        </ul>
+
+        <ul className="nav justify-content-end">
+          <li className="nav-item"><a href="#" className="nav-link">link</a></li>
+          <li className="nav-item"><a href="#" className="nav-link">link</a></li>
+          <li className="nav-item"><a href="#" className="nav-link">link</a></li>
+          <li className="nav-item"><a href="#" className="nav-link disabled">disabled</a></li>
+        </ul>
+
+        <ul className="nav flex-column">
+          <li className="nav-item"><a href="#" className="nav-link">link</a></li>
+          <li className="nav-item"><a href="#" className="nav-link">link</a></li>
+          <li className="nav-item"><a href="#" className="nav-link">link</a></li>
+          <li className="nav-item"><a href="#" className="nav-link disabled">disabled</a></li>
+        </ul>
       </div>
 
       <div className="container-md pt-3">
-        <p>For {`<a>`} tag we use href instead of data-bs-target for collapse id</p>
-        <a href="#show2" className="btn btn-info" data-bs-toggle="collapse">Show</a>
-        {/* We can add .show to make the collapsible contents showing up by default */}
-        <div className="collapse show" id="show2">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa ea officia omnis voluptate deleniti ipsa facere in facilis ad esse atque eos eaque, eum vero ipsum? Maxime alias iure labore?
-        </div>
+        <h3>Navigation Tabs</h3>
+        <p>Turn the nav menu into navigation tabs with the .nav nav-tabs class. Add the active class to the active/current link. If you want the tabs to be togglable, see the last example on the tutorial page.</p>
+        <ul className="nav nav-tabs nav-justified">
+          <li className="nav-item"><a href="#" className="nav-link active">Active</a></li>
+          <li className="nav-item"><a href="#" className="nav-link">link</a></li>
+          <li className="nav-item"><a href="#" className="nav-link">link</a></li>
+          <li className="nav-item"><a href="#" className="nav-link disabled">disabled</a></li>
+        </ul>
       </div>
 
       <div className="container-md pt-3">
-        <h2>Accordion</h2>
-
-        <div id="accordion">
-          <div className="card">
-            <div className="card-header">
-              <a href="#collapse1" className="btn" data-bs-toggle="collapse">
-                Collapsible Group Item #1
-              </a>
-            </div>
-            <div id="collapse1" className="collapse show" data-bs-parent="#accordion">
-              <div className="card-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic aut omnis quae nostrum repudiandae possimus voluptatibus nemo. Sunt provident ipsa sit itaque nam officiis enim in quis nobis dignissimos. Officiis!
-              </div>
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="card-header">
-              <a href="#collapse2" className="btn" data-bs-toggle="collapse">
-                Collapsible Group Item #2
-              </a>
-            </div>
-            <div id="collapse2" className="collapse" data-bs-parent="#accordion">
-              <div className="card-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic aut omnis quae nostrum repudiandae possimus voluptatibus nemo. Sunt provident ipsa sit itaque nam officiis enim in quis nobis dignissimos. Officiis!
-              </div>
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="card-header">
-              <a href="#collapse3" className="btn" data-bs-toggle="collapse">
-                Collapsible Group Item #3
-              </a>
-            </div>
-            <div id="collapse3" className="collapse" data-bs-parent="#accordion">
-              <div className="card-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic aut omnis quae nostrum repudiandae possimus voluptatibus nemo. Sunt provident ipsa sit itaque nam officiis enim in quis nobis dignissimos. Officiis!
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <h3>Nav Pills</h3>
+        <ul className="nav nav-pills nav-justified">
+          <li className="nav-item"><a href="#" className="nav-link active">Active</a></li>
+          <li className="nav-item"><a href="#" className="nav-link">link</a></li>
+          <li className="nav-item"><a href="#" className="nav-link">link</a></li>
+          <li className="nav-item"><a href="#" className="nav-link disabled">disabled</a></li>
+        </ul>
       </div>
     </>
   )
