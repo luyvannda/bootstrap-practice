@@ -4,50 +4,33 @@ export default function Bootstrap() {
   return (
     <>
 
-      <div id="carouselComponent" className="carousel slide" data-bs-ride="carousel">
-        <div className="carousel-indicators">
-          <button type="button" data-bs-target="#carouselComponent" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselComponent" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselComponent" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img src="./newyork.jpg" className="d-block w-100" alt="..." />
-            <div className="carousel-caption">
-              <h3>New York</h3>
-              <p>We had such a great time in New York!</p>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <img src="./paris.jpg" className="d-block w-100" alt="..." />
-            <div className="carousel-caption">
-              <h3>Paris</h3>
-              <p>All lovers wish to go there</p>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <img src="./sanfran.jpg" className="d-block w-100" alt="..." />
-            <div className="carousel-caption text-warning">
-              <h3>San Francisco</h3>
-              <p>We would love to visit there sometime</p>
+      <div className="container-md pt-3">
+        <h3>Modal Example</h3>
+        <p>Click on the button to open the modal</p>
+        <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalId">
+          Launch
+        </button>
+
+        <div className="modal fade" id="modalId" tabIndex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+          <div className="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="modalTitleId">Modal title</h5>
+                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div className="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, neque! Unde vel officiis quibusdam voluptates, incidunt veniam velit amet! Est vero nulla nisi facere laborum doloremque asperiores quam. Minima, nobis!</p>
+
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, neque! Unde vel officiis quibusdam voluptates, incidunt veniam velit amet! Est vero nulla nisi facere laborum doloremque asperiores quam. Minima, nobis!</p>
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
             </div>
           </div>
         </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#carouselComponent" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#carouselComponent" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
       </div>
-
-      <div className="container-fluid pt-3">
-        <h3>Carousel Example</h3>
-        <p>The following example shows how to create a basic carousel with indicators and controls.</p>
-      </div>
-
     </>
   )
 } 
