@@ -1,3 +1,7 @@
 .App {
-  min-height: 200vh;
+  min-height: 100vh;
+}
+
+.carousel {
+  width: 50%;
 }/*# sourceMappingURL=App.css.map */

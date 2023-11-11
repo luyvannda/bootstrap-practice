@@ -3,59 +3,38 @@
 export default function Bootstrap() {
   return (
     <>
-      {/* Remove the .navbar-expand-* class to create a navigation bar that will always be vertical: */}
 
-      <div className="container-fluid pt-3">
-        <h3>Sticky Navbar</h3>
-        <p>A sticky navigation bar stays fixed at the top of the page when you scroll past it.</p>
-        <p>Scroll this page to see the effect. <strong>Note:</strong> sticky-top does not work in IE11 and earlier.</p>
-      </div>
-
-
-      <nav className="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            <img className="rounded-pill" src="./avatar1.png" alt="Avatar Logo" style={{ width: "40px" }} /> Logo</a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav me-auto"  >
-              <li className="nav-item">
-                <a className="nav-link" href="#">Link</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Link</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Link</a>
-              </li>
-              <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
-                <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Link</a></li>
-                  <li><a className="dropdown-item" href="#">Another link</a></li>
-                  <li><a className="dropdown-item" href="#">A third link</a></li>
-                </ul>
-              </li>
-            </ul>
-
-            <form action="get" className="d-flex">
-              <input type="text" className="form-control me-3" placeholder="Search" />
-              <button className="btn btn-primary" type="button">Search</button>
-            </form>
+      <div id="carouselComponent" className="carousel slide" data-bs-ride="carousel">
+        <div className="carousel-indicators">
+          <button type="button" data-bs-target="#carouselComponent" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselComponent" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselComponent" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img src="./newyork.jpg" className="d-block w-100" alt="..." />
+          </div>
+          <div className="carousel-item">
+            <img src="./paris.jpg" className="d-block w-100" alt="..." />
+          </div>
+          <div className="carousel-item">
+            <img src="./sanfran.jpg" className="d-block w-100" alt="..." />
           </div>
         </div>
-      </nav>
-
-      <div className="container-fluid">
-        <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
-        <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
-        <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
-        <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselComponent" data-bs-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#carouselComponent" data-bs-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
+        </button>
       </div>
 
+      <div className="container-fluid pt-3">
+        <h3>Carousel Example</h3>
+        <p>The following example shows how to create a basic carousel with indicators and controls.</p>
+      </div>
 
     </>
   )
