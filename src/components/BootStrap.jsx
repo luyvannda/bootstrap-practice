@@ -13,12 +13,24 @@ export default function Bootstrap() {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img src="./newyork.jpg" className="d-block w-100" alt="..." />
+            <div className="carousel-caption">
+              <h3>New York</h3>
+              <p>We had such a great time in New York!</p>
+            </div>
           </div>
           <div className="carousel-item">
             <img src="./paris.jpg" className="d-block w-100" alt="..." />
+            <div className="carousel-caption">
+              <h3>Paris</h3>
+              <p>All lovers wish to go there</p>
+            </div>
           </div>
           <div className="carousel-item">
             <img src="./sanfran.jpg" className="d-block w-100" alt="..." />
+            <div className="carousel-caption text-warning">
+              <h3>San Francisco</h3>
+              <p>We would love to visit there sometime</p>
+            </div>
           </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselComponent" data-bs-slide="prev">
