@@ -6,8 +6,11 @@
 
 .App {
   min-height: 100vh;
+  position: relative;
 }
 
-.carousel {
-  width: 50%;
+#scroll-spy-container {
+  position: relative;
+  height: 50vh;
+  overflow-y: scroll;
 }
