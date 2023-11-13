@@ -1,4 +1,21 @@
 .App {
   min-height: 100vh;
   position: relative;
+}
+
+span {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin: 6px;
+  background-color: #d0cece;
+}
+
+.row img {
+  max-width: 6rem;
+}
+
+#rounded-pill {
+  width: 150px;
+  height: 75px;
 }/*# sourceMappingURL=App.css.map */

@@ -4,30 +4,43 @@
 export default function Bootstrap() {
 
   return (
-    <div className="container-md pt-3">
+    <>
+      <div className="container-md pt-3">
+        <h2>Border</h2>
+        <span className="border border-primary"></span>
+        <span className="border border-2 border-secondary"></span>
+        <span className="border-top border-3 border-success"></span>
+        <span className="border-end border-4 border-info"></span>
+        <span className="border-bottom border-5 border-warning"></span>
+        <span className="border-start border-1 border-danger"></span>
+        <br />
 
-      {/* Offcanvas Sidebar 
+        <span className="border border-top-5  border-dark"></span>
+        <span className="border border-end-4 border-white"></span>
 
-      Use the .offcanvas-start|end|top|bottom to position the offcanvas to the left, right, top or bottom
-      */}
-
-      <div className="offcanvas offcanvas-end offcanvas-lg text-bg-dark" id="demo">
-        <div className="offcanvas-header">
-          <h1 className="offcanvas-title">Heading</h1>
-          <button type="button" className="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"></button>
-        </div>
-        <div className="offcanvas-body">
-          <p>Some text lorem ipsum.</p>
-          <p>Some text lorem ipsum.</p>
-          <button className="btn btn-secondary" type="button">A Button</button>
-        </div>
       </div>
 
-      {/* Button to open the offcanvas sidebar */}
-      <button className="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
-        Open Offcanvas Sidebar
-      </button>
-    </div>
+      <div className="container-md pt-3">
+        <h2>Border Radius</h2>
 
+        <div className="row gap-3">
+          <img src="./avatar1.png" className="border border-primary rounded-1" alt="An avatar icon"></img>
+          <img src="./avatar1.png" className="border border-info rounded-start-2" alt="An avatar icon"></img>
+          <img src="./avatar1.png" className="border border-success rounded-end-3" alt="An avatar icon"></img>
+          <img src="./avatar1.png" className="border border-warning rounded-top-4 " alt="An avatar icon"></img>
+          <img src="./avatar1.png" className="border border-danger  rounded-bottom-5" alt="An avatar icon"></img>
+        </div>
+
+
+        <div className="container-md pt-3">
+
+
+          <img src="./avatar1.png" style={{ width: "6rem" }} className="rounded-circle" alt="An avatar icon"></img>
+
+          <img id="rounded-pill" src="./avatar1.png" className="rounded-pill " alt="An avatar icon"></img>
+
+        </div>
+      </div>
+    </>
   )
 } 
