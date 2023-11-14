@@ -19,6 +19,29 @@ export default function Bootstrap() {
         <div className="shadow p-4 mb-4 bg-white">Default shadow</div>
         <div className="shadow-lg p-4 mb-4 bg-white">Large shadow</div>
       </div>
+
+      <div className="container mt-3">
+        <h1>Vertical Align</h1>
+        <p>Change the alignment of elements with the align classes (only works on inline, inline-block, inline-table and table cell elements):</p>
+        <span className="align-baseline">baseline</span>
+        <span className="align-top">top</span>
+        <span className="align-middle">middle</span>
+        <span className="align-bottom">bottom</span>
+        <span className="align-text-top">text-top</span>
+        <span className="align-text-bottom">text-bottom</span>
+      </div>
+
+      <div className="container mt-3">
+        <h3>Aspect ratio</h3>
+
+        <div className="ratio ratio-4x3">
+          <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        </div>
+
+        <div className="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        </div>
+      </div>
     </>
   )
 } 
