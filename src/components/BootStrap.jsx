@@ -6,98 +6,25 @@ export default function Bootstrap() {
   return (
     <>
       <div className="container mt-3">
-        <h3>Flex item</h3>
-        <div className="d-flex p-3 bg-secondary text-white">
-          <div className="p-2 bg-info">Flex item 1</div>
-          <div className="p-2 bg-warning">Flex item 2</div>
-          <div className="p-2 bg-primary">Flex item 3</div>
-        </div>
+
+        <h2>Stacked form</h2>
+        <form action="/action_page.php">
+          <div className="mb-3 mt-3">
+            <label htmlFor="email">Email:</label>
+            <input type="email" className="form-control" id="email" placeholder="Enter email" name="email" />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="pwd">Password:</label>
+            <input type="password" className="form-control" id="pwd" placeholder="Enter password" name="pswd" />
+          </div>
+          <div className="form-check mb-3">
+            <label className="form-check-label">
+              <input className="form-check-input" type="checkbox" name="remember" /> Remember me
+            </label>
+          </div>
+          <button type="submit" className="btn btn-primary">Submit</button>
+        </form>
       </div>
-
-      <div className="container mt-3">
-        <h3>Reverse row flex item</h3>
-        <div className="d-flex flex-row-reverse bg-secondary text-white">
-          <div className="p-2 bg-info">Flex item 1</div>
-          <div className="p-2 bg-warning">Flex item 2</div>
-          <div className="p-2 bg-primary">Flex item 3</div>
-        </div>
-      </div>
-
-
-      <div className="container mt-3">
-        <h3>Inline flex item</h3>
-        <div className="d-inline-flex p-3 bg-secondary text-white">
-          <div className="p-2 bg-info">Flex item 1</div>
-          <div className="p-2 bg-warning">Flex item 2</div>
-          <div className="p-2 bg-primary">Flex item 3</div>
-        </div>
-      </div>
-
-      <div className="container mt-3">
-        <h3>Flex column item</h3>
-        <div className="d-flex flex-column bg-secondary text-white">
-          <div className="p-2 bg-info">Flex item 1</div>
-          <div className="p-2 bg-warning">Flex item 2</div>
-          <div className="p-2 bg-primary">Flex item 3</div>
-        </div>
-        <h3>Column reverse item</h3>
-        <div className="d-flex flex-column-reverse bg-secondary text-white">
-          <div className="p-2 bg-info">Flex item 1</div>
-          <div className="p-2 bg-warning">Flex item 2</div>
-          <div className="p-2 bg-primary">Flex item 3</div>
-        </div>
-      </div>
-
-      <div className="container mt-3">
-        <h3>Justify Contents</h3>
-
-        <div className="d-flex justify-content-end bg-secondary text-white">
-          <div className="p-2 bg-info">Flex item 1</div>
-          <div className="p-2 bg-warning">Flex item 2</div>
-          <div className="p-2 bg-primary">Flex item 3</div>
-        </div>
-        <div className="d-flex justify-content-center bg-secondary text-white">
-          <div className="p-2 bg-info">Flex item 1</div>
-          <div className="p-2 bg-warning">Flex item 2</div>
-          <div className="p-2 bg-primary">Flex item 3</div>
-        </div>
-
-        <div className="d-flex justify-content-between bg-secondary text-white">
-          <div className="p-2 bg-info">Flex item 1</div>
-          <div className="p-2 bg-warning">Flex item 2</div>
-          <div className="p-2 bg-primary">Flex item 3</div>
-        </div>
-        <div className="d-flex justify-content-around bg-secondary text-white">
-          <div className="p-2 bg-info">Flex item 1</div>
-          <div className="p-2 bg-warning">Flex item 2</div>
-          <div className="p-2 bg-primary">Flex item 3</div>
-        </div>
-      </div>
-
-      <div className="container mt-3">
-        <h3>Flex Order & Grow</h3>
-        <div className="d-flex text-white">
-          <div className="p-2 order-2 bg-info">Flex item 1</div>
-          <div className="p-2 order-3 flex-grow-1 bg-warning">Flex item 2</div>
-          <div className="p-2 order-1 bg-primary">Flex item 3</div>
-        </div>
-      </div>
-
-      <div className="container mt-3">
-        <h3>Align items start vs baseline</h3>
-        <div className="d-flex align-items-start">
-          <div className="p-2 bg-primary">Flex item 1</div>
-          <div className="p-2 bg-secondary">Flex item 2</div>
-          <div className="p-2 bg-success">Flex item 3</div>
-        </div>
-
-        <div className="d-flex align-items-baseline">
-          <div className="p-2 bg-primary">Flex item 1</div>
-          <div className="p-2 bg-secondary">Flex item 2</div>
-          <div className="p-2 bg-success">Flex item 3</div>
-        </div>
-      </div>
-
     </>
   )
 } 
