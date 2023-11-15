@@ -5,41 +5,72 @@ export default function Bootstrap() {
 
   return (
     <>
-
       <div className="container mt-3">
-        <h2>Spacing and margin</h2>
-        <div className="pt-4 bg-warning">I only have a top padding (1.5rem)</div>
-        <div className="p-5 bg-success text-white">I have a padding on all sides (3rem)</div>
-        <div className="m-5 pb-5 bg-info">I have a margin on all sides (3rem) and a bottom padding (3rem)</div>
-      </div>
-
-      <div className="container pt-3">
-        <div className="shadow-none p-4 mb-4 bg-light">No shadow</div>
-        <div className="shadow-sm p-4 mb-4 bg-white">Small shadow</div>
-        <div className="shadow p-4 mb-4 bg-white">Default shadow</div>
-        <div className="shadow-lg p-4 mb-4 bg-white">Large shadow</div>
+        <h3>Flex item</h3>
+        <div className="d-flex p-3 bg-secondary text-white">
+          <div className="p-2 bg-info">Flex item 1</div>
+          <div className="p-2 bg-warning">Flex item 2</div>
+          <div className="p-2 bg-primary">Flex item 3</div>
+        </div>
       </div>
 
       <div className="container mt-3">
-        <h1>Vertical Align</h1>
-        <p>Change the alignment of elements with the align classes (only works on inline, inline-block, inline-table and table cell elements):</p>
-        <span className="align-baseline">baseline</span>
-        <span className="align-top">top</span>
-        <span className="align-middle">middle</span>
-        <span className="align-bottom">bottom</span>
-        <span className="align-text-top">text-top</span>
-        <span className="align-text-bottom">text-bottom</span>
+        <h3>Reverse row flex item</h3>
+        <div className="d-flex flex-row-reverse bg-secondary text-white">
+          <div className="p-2 bg-info">Flex item 1</div>
+          <div className="p-2 bg-warning">Flex item 2</div>
+          <div className="p-2 bg-primary">Flex item 3</div>
+        </div>
+      </div>
+
+
+      <div className="container mt-3">
+        <h3>Inline flex item</h3>
+        <div className="d-inline-flex p-3 bg-secondary text-white">
+          <div className="p-2 bg-info">Flex item 1</div>
+          <div className="p-2 bg-warning">Flex item 2</div>
+          <div className="p-2 bg-primary">Flex item 3</div>
+        </div>
       </div>
 
       <div className="container mt-3">
-        <h3>Aspect ratio</h3>
+        <h3>Flex column item</h3>
+        <div className="d-flex flex-column bg-secondary text-white">
+          <div className="p-2 bg-info">Flex item 1</div>
+          <div className="p-2 bg-warning">Flex item 2</div>
+          <div className="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <h3>Column reverse item</h3>
+        <div className="d-flex flex-column-reverse bg-secondary text-white">
+          <div className="p-2 bg-info">Flex item 1</div>
+          <div className="p-2 bg-warning">Flex item 2</div>
+          <div className="p-2 bg-primary">Flex item 3</div>
+        </div>
+      </div>
 
-        <div className="ratio ratio-4x3">
-          <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+      <div className="container mt-3">
+        <h3>Justify Contents</h3>
+
+        <div className="d-flex justify-content-end bg-secondary text-white">
+          <div className="p-2 bg-info">Flex item 1</div>
+          <div className="p-2 bg-warning">Flex item 2</div>
+          <div className="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <div className="d-flex justify-content-center bg-secondary text-white">
+          <div className="p-2 bg-info">Flex item 1</div>
+          <div className="p-2 bg-warning">Flex item 2</div>
+          <div className="p-2 bg-primary">Flex item 3</div>
         </div>
 
-        <div className="ratio ratio-16x9">
-          <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        <div className="d-flex justify-content-between bg-secondary text-white">
+          <div className="p-2 bg-info">Flex item 1</div>
+          <div className="p-2 bg-warning">Flex item 2</div>
+          <div className="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <div className="d-flex justify-content-around bg-secondary text-white">
+          <div className="p-2 bg-info">Flex item 1</div>
+          <div className="p-2 bg-warning">Flex item 2</div>
+          <div className="p-2 bg-primary">Flex item 3</div>
         </div>
       </div>
     </>
