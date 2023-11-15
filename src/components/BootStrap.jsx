@@ -83,6 +83,21 @@ export default function Bootstrap() {
         </div>
       </div>
 
+      <div className="container mt-3">
+        <h3>Align items start vs baseline</h3>
+        <div className="d-flex align-items-start">
+          <div className="p-2 bg-primary">Flex item 1</div>
+          <div className="p-2 bg-secondary">Flex item 2</div>
+          <div className="p-2 bg-success">Flex item 3</div>
+        </div>
+
+        <div className="d-flex align-items-baseline">
+          <div className="p-2 bg-primary">Flex item 1</div>
+          <div className="p-2 bg-secondary">Flex item 2</div>
+          <div className="p-2 bg-success">Flex item 3</div>
+        </div>
+      </div>
+
     </>
   )
 } 
