@@ -73,6 +73,16 @@ export default function Bootstrap() {
           <div className="p-2 bg-primary">Flex item 3</div>
         </div>
       </div>
+
+      <div className="container mt-3">
+        <h3>Flex Order & Grow</h3>
+        <div className="d-flex text-white">
+          <div className="p-2 order-2 bg-info">Flex item 1</div>
+          <div className="p-2 order-3 flex-grow-1 bg-warning">Flex item 2</div>
+          <div className="p-2 order-1 bg-primary">Flex item 3</div>
+        </div>
+      </div>
+
     </>
   )
 } 
